@@ -1,5 +1,5 @@
 const { makeWASocket, DisconnectReason, useMultiFileAuthState } = require('@whiskeysockets/baileys');
-const { Boom } = require('@hapi/boom');
+const{ Boom } = require('@hapi/boom');
 
 async function connectToWhatsApp() {
     const { state, saveCreds } = await useMultiFileAuthState('auth_info_baileys');
